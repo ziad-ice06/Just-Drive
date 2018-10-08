@@ -2,7 +2,7 @@ body {
     font-family: 'Myriad Pro';
 }
 
-body.gradient {
+.gradient {
     background: rgba(128, 202, 255, 1);
     /* Old Browsers */
     background: -moz-linear-gradient(top, rgba(128, 202, 255, 1) 0%, rgba(88, 157, 202, 1) 100%);
@@ -46,12 +46,13 @@ img {
 }
 
 .mainmenu ul li+li {
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
 .mainmenu ul li a {
     color: #fff;
     text-transform: uppercase;
+    padding-left: 0;
 }
 
 .mainmenu {
@@ -618,7 +619,9 @@ span.arrowbanner {
 }
 
 .header-3 .mainmenu li a {
-    font-size: 26px;
+    /*font-size: 26px;*/
+    font-size: 15px;
+    padding-left: 0;
 }
 
 header.header-3 {
@@ -1200,4 +1203,15 @@ span.arrowbanner {
 .instructer-detail > div {
     width: 100%;
 }
+}
+
+.btn-login{
+    background: #12cefe;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.mainmenu .dropdown .dropdown-menu a{
+    color: #000;
+    padding-left: 15px;
 }

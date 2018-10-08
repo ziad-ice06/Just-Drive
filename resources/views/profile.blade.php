@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Just Dirve</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/myriad.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="gradient" id="profile">
+@extends('layouts.justdrive')
+
+@section('content')
+<div class="gradient" id="profile">
 	<header id="header" class="header-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-5 col-md-5">
 					<div class="logo">
-						<a href="index.html"><img src="assets/images/white-logo.png" alt="#"></a>
+						<a href="/"><img src="{{ asset('images/white-logo.png') }}" alt="#"></a>
 						<a class="nav-link openme" href="#" onclick="menu_open()"><i class="fa fa-bars" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -24,9 +15,39 @@
 					<div class="mainmenu">
 						<nav class="text-right">
 							<ul class="list-inline">
-								<li><a href="profile.html">Profile</a></li>
 								<li><a href="#">Password</a></li>
 								<li><a href="#">Application</a></li>
+								<li><a href="{{ route('result') }}">Result</a></li>
+								<li><a href="{{ route('payment') }}">Payment</a></li>
+								<!-- <li>
+	                                <div class="" aria-labelledby="navbarDropdown">
+	                                    <a class="" href="{{ route('logout') }}"
+	                                       onclick="event.preventDefault();
+	                                                     document.getElementById('logout-form').submit();">
+	                                        {{ __('Logout') }}
+	                                    </a>
+	                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+	                                        @csrf
+	                                    </form>
+	                                </div>
+	                            </li> -->
+	                            <li class="nav-item dropdown">
+	                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+	                                    {{ Auth::user()->name }} <span class="caret"></span>
+	                                </a>
+
+	                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+	                                    <a class="dropdown-item" href="{{ route('logout') }}"
+	                                       onclick="event.preventDefault();
+	                                                     document.getElementById('logout-form').submit();">
+	                                        {{ __('Logout') }}
+	                                    </a>
+
+	                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+	                                        @csrf
+	                                    </form>
+	                                </div>
+	                            </li>
 							</ul>
 						</nav>
 					</div>
@@ -75,9 +96,9 @@
 					</form>
 					<div class="or-login-social">
 						<ul>
-							<li><a href="#"><img src="assets/images/facebook.png" alt="#"></a></li>
-							<li><a href="#"><img src="assets/images/twitter.png" alt="#"></a></li>
-							<li><a href="#"><img src="assets/images/google-plus.png" alt="#"></a></li>
+							<li><a href="#"><img src="{{ asset('images/facebook.png') }}" alt="#"></a></li>
+							<li><a href="#"><img src="{{ asset('images/twitter.png') }}" alt="#"></a></li>
+							<li><a href="#"><img src="{{ asset('images/google-plus.png') }}" alt="#"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -87,7 +108,7 @@
 						<hr>
 					</div>
 					<div class="calender-img">
-						<img src="assets/images/calender.png" alt="">
+						<img src="{{ asset('images/calender.png') }}" alt="">
 					</div>
 					<div class="lessson">
 						<div class="white-box">
@@ -130,8 +151,7 @@
 			</div>
 		</div>			
 	</aside>
+</div>
 
 	
-<script src="assets/js/jquery-3.3.1.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/main.js"></script>
-</body>
-</html>
+@endsection

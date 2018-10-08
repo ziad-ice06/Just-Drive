@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Just Dirve</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/myriad.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body id="result-page">
+@extends('layouts.justdrive')
+
+@section('content')
+<div id="result-page">
 	<header id="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-5 col-md-5">
 					<div class="logo">
-						<a href="index.html"><img src="assets/images/logo.png" alt="#"></a>
+						<a href="/"><img src="{{ asset('images/logo.png') }}" alt="#"></a>
 					</div>
 				</div>
 				<div class="col-12 col-sm-5 offset-md-1 offset-sm-1 col-md-5">
@@ -35,7 +26,7 @@
 		<div class="container-fluid nopadding">
 			<div class="row">
 				<div class="col-md-12 nopadding">
-					<img src="assets/images/profile-banner.png" alt="">
+					<img src="{{ asset('images/profile-banner.png') }}" alt="">
 					<div class="learning-img">
 						<img src="assets/images/l2.png" alt="">
 					</div>
@@ -90,7 +81,7 @@
 				<div class="col-md-4">
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -105,7 +96,7 @@
 					</div>
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -120,7 +111,7 @@
 					</div>
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -137,7 +128,7 @@
 				<div class="col-md-4">
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -153,7 +144,7 @@
 
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -168,7 +159,7 @@
 					</div>
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -185,7 +176,7 @@
 				<div class="col-md-4">
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -200,7 +191,7 @@
 					</div>
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -215,7 +206,7 @@
 					</div>
 					<div class="instructer-detail">
 						<div class="instructor-image">
-							<img src="assets/images/instructor-img.png" alt="">
+							<img src="{{ asset('images/instructor-img.png') }}" alt="">
 						</div>
 						<div class="instructor-info">
 							<p>lorem ipsum</p>
@@ -251,8 +242,6 @@
 				</div>
 			</div>
 		</div>
-	</footer><!-- /footer -->
-	
-<script src="assets/js/jquery-3.3.1.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/main.js"></script>
-</body>
-</html>
+	</footer>
+</div>
+@endsection
