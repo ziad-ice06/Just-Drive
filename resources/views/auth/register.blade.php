@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="form-controls">
                                         <div class="col-12">
-                                            <input id="tele_no" type="tel" class="form-control" placeholder="Tele No" name="tele_no">
+                                            <input id="phone" type="tel" class="form-control" placeholder="Phone No" name="phone">
                                         </div>
                                     </div>
                                     <div class="form-controls">
