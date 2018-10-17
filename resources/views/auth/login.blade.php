@@ -76,9 +76,9 @@
                 <div class="col-md-6">
                     <div class="or-login-social">
                         <ul>
-                            <li><a href="#"><img src="{{ asset('images/facebook.png') }}" alt="#"></a></li>
-                            <li><a href="#"><img src="{{ asset('images/twitter.png') }}" alt="#"></a></li>
-                            <li><a href="#"><img src="{{ asset('images/google-plus.png') }}" alt="#"></a></li>
+                            <li><a href="login/facebook"><img src="{{ asset('images/facebook.png') }}" alt="#"></a></li>
+                            <li><a href="login/twitter"><img src="{{ asset('images/twitter.png') }}" alt="#"></a></li>
+                            <li><a href="login/google"><img src="{{ asset('images/google-plus.png') }}" alt="#"></a></li>
                         </ul>
                     </div>
                 </div>
